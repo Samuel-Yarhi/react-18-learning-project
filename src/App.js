@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import './components/Greet'
 import { Greet } from './components/Greet';
-
+import { Message } from './components/Message';
+import { ClickHandler } from './components/ClickHandler';
+import { ParentComponent } from './components/ParentComponent';
+import { UserGreeting } from './components/UserGreeting';
 function App() {
   return (
     <div className='App'>
@@ -14,6 +17,10 @@ function App() {
       <Greet name='Clark' lastName = 'Kent'/>
       <Greet name='Mary'/>
         <p>I am a child in a p</p>
+      <Message/>
+      <ClickHandler/>
+      <ParentComponent/>
+      <UserGreeting/>
     </div>
     // <div className="App">
     //   <header className="App-header">
